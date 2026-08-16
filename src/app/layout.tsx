@@ -62,6 +62,12 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${archivo.variable} ${work.variable}`}>
+      <head>
+        {/* Warm up the connection to the placeholder image CDN — the hero
+            image is the LCP element and picsum redirects to its fastly edge. */}
+        <link rel="preconnect" href="https://picsum.photos" />
+        <link rel="preconnect" href="https://fastly.picsum.photos" />
+      </head>
       <body className="bg-white text-carbon antialiased">
         <a
           href="#main"
