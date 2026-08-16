@@ -1,6 +1,6 @@
 export const SITE = {
   name: "Obsidian",
-  url: "https://obsidian.example.com",
+  url: "https://retail-shop.gat6.vercel.app",
   tagline: "Premium fashion, monochrome by design",
   description:
     "Lorem ipsum dolor sit amet — Obsidian is a premium fashion label with a curated, product-led collection.",
